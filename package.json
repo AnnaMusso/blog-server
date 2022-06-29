@@ -1,0 +1,44 @@
+{
+  "name": "blog-server",
+  "jest" : {
+    "rootDir": ".",
+    "verbose" :true,
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "js"
+      ],
+    "modulePathIgnorePatterns": ["<rootDir>/.*/__mocks__"],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+      }
+  },
+  "version": "1.0.0",
+  "description": "server",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "dev": "nodemon -e js server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annagiuliam/blog-server.git"
+  },
+  "author": "Anna Musso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/annagiuliam/blog-server/issues"
+  },
+  "homepage": "https://github.com/annagiuliam/blog-server#readme",
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "express-basic-auth": "^1.2.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  }
+}
